@@ -26,8 +26,6 @@ LondonMapSF <- st_as_sf(LondonMap)
 LondonMapSF <- append_data(LondonMapSF,LondonData, key.shp = "lad15cd", key.data = "New code", ignore.duplicates = TRUE)
 #plot a choropleth
 qtm(LondonMapSF, fill = "% All Children aged 0-15 - 2015")
+#qgis map
 knitr::include_graphics('/Users/sun/Desktop/Leicestershire_transportation_landuse.png')
 ```
----
-
----
